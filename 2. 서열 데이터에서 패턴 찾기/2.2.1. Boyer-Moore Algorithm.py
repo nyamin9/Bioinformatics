@@ -29,7 +29,7 @@ class BoyerMoore:
         j = len(self.pattern)+1
         self.f[i] = j
         while i > 0:
-            while j <= len(self.pattern) and self.pattern[i-1] != self.pattern[j-i]:
+            while j <= len(self.pattern) and self.pattern[i-1] != self.pattern[j-1]:
                 if self.s[j] == 0: 
                     self.s[j] = j-i;
                 j = self.f[j]
